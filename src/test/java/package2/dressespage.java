@@ -39,7 +39,7 @@ public class dressespage {
 		driver.get("http://automationpractice.com/index.php");
 	}
 
-	@BeforeMethod
+	@Test
 	public void verifydressescheckbox() {
 		dressespage.clickdressestab();
 		// Assert.assertTrue(dressespage.getpageheader().equals("DRESSES"));
@@ -48,7 +48,7 @@ public class dressespage {
 		Assert.assertTrue(dressespage.getlargesize().isDisplayed());
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void verifyproductcount() {
 		dressespage.clickdressestab();
 		// int actual = dressespage.getproductnumberfromheader();
@@ -57,14 +57,14 @@ public class dressespage {
 				"failed:count mismatched");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void verifyproductaddedtab() {
 		dressespage.clickdressestab();
 		dressespage.clickaddtocart();
 		Assert.assertTrue(dressespage.getproductimage().equals("Product successfully added to your shopping cart"));
 	}
 
-	@Test(priority = 1)
+	@Test
 	public void verifydiscountprice() {
 		dressespage.clickdressestab();
 		dressespage.clicklist();

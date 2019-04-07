@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="package2.productdetailspagetest">
+        <methods>
+          <include name="verifysocialsite"/>
+        </methods>
+      </class> <!-- package2.productdetailspagetest -->
+      <class name="package2.dressespage">
+        <methods>
+          <include name="gobacktodressespage"/>
+          <include name="verifyproductaddedtab"/>
+          <include name="launchBrowser"/>
+          <include name="verifydiscountprice"/>
+          <include name="verifydressescheckbox"/>
+        </methods>
+      </class> <!-- package2.dressespage -->
+      <class name="package2.homepagetest">
+        <methods>
+          <include name="verifyaddtocartforproduct"/>
+          <include name="verifynewslettertab"/>
+        </methods>
+      </class> <!-- package2.homepagetest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

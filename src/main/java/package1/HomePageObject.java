@@ -93,7 +93,7 @@ public class HomePageObject extends BasePage {
 	public void newslettertab() {
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 		//js.executeScript("arguments[0].scrollIntoView(true)", newsletter);
-		newsletter.sendKeys("svarsha@gmail.com");
+		newsletter.sendKeys("svarsh@gmail.com");
 	}
 
 	public void clicknewslettertab() {

@@ -40,6 +40,7 @@ public class homepagetest {
 	public void verifynewslettertab() {
 		homepage.clicknewslettertab();
 		homepage.newslettertab();
+		
 		homepage.submitbutton();
 		Assert.assertTrue(
 				homepage.getnewsalert().equals("Newsletter : You have successfully subscribed to this newsletter."));
